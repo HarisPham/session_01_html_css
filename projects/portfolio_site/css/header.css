@@ -15,9 +15,21 @@ header{
     font-weight: bold;
     color: #6366f1;
 }
-header a{
+nav a{
     text-decoration: none;
     margin-left: 15px;
     color: var(--color-dark);
     font-size: 14px;
+}
+nav a:hover{
+    color: var(--color-primary);
+}
+nav a::after{
+    width: 0;
+    height: 2px;
+    background: var(--color-primary);
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
 }
